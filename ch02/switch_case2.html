@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch~case문</title>
+    <style>
+        body{
+            background-color: rgb(1, 1 ,93);
+            color: #ececec;
+            text-align: center;
+            margin-top: 50px;
+        }
+        p{
+            text-shadow: 2px 1px 2px #222;
+            font-size: 2em; /* 1em - 16px */
+        }
+        strong{
+            color: yellow;
+            font-size: 1.5em; /* 1em - 32px */
+        }
+    </style>
+    <script>
+        //1-마케팅, 2-개발, 3-디자인
+        let session = prompt("관심 세션을 선택해 주세요. ", "1-마케팅, 2-개발, 3-디자인")
+
+        switch(session){
+            case '1':
+                document.write("<p>마케팅 세션은 <strong>201호</strong>에서 진행됩니다.</p>");
+                break;
+            case '2':
+                document.write("<p>개발 세션은 <strong>203호</strong>에서 진행됩니다.</p>");
+                break;
+            case '3':
+                document.write("<p>디자인 세션은 <strong>205</strong>호에서 진행됩니다.</p>");
+                break;
+            default:
+                document.write("<p>진행되는 세션이 없습니다.</p>");
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
