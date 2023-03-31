@@ -11,6 +11,7 @@
             margin: 0 auto;
             text-align: center;
         }
+        p{text-align: center;}
     </style>
 </head>
 <body>
@@ -26,15 +27,17 @@
         function calcAge(){
             const CURRENT_YEAR = 2023;
             let birthYear = prompt("출생 년도를 입력하세요", "yyyy");
-            let age; //할당 않음
+            let age; //할당 안함
 
             //isNaN(문자) -> true
-            if(birthYear !== null || isNaN(birthYear)){
-                document.getElementById("show").innerHTML = "입력이 취소되었습니다.";
+            //취소 - null 또는 문자 입력 시 isNaN()
+            if(birthYear === null || isNaN(birthYear)){
+                document.getElementById("show").innerHTML = "입력이 취소되었습니다."
             }
             else{
                 age = CURRENT_YEAR - parseInt(birthYear) + 1;
-                document.getElementById("show").innerHTML = age;
+                document.getElementById("show").innerHTML =
+                    "당신의 나이는 " + age + "세이군요!";
             }
         }
     </script>
