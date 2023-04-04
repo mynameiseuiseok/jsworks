@@ -16,6 +16,38 @@
         <img src="./images/flower1.jpg" alt="꽃" id="pic" class="pic">
     </div>
     <script>
+        /*
+            toggle 기능
+            let state = true; //상태 변수(전역 변수)
+
+            if(state){
+                실행1
+                state = false;
+            }
+            else{
+                실행2
+                state = true;
+            }
+        */
+        let state = true; //상태 변수 - 전역(global)에 위치
+
+        function showHide(){
+            let img = document.getElementById("pic");
+            let btnText = document.getElementById("btnText");
+
+            if(state){
+                img.style.display = "block";
+                btnText.innerText = "숨기기";
+                state = false;
+            }
+            else{
+                img.style.display = "none";
+                btnText.innerText = "보이기"
+                state = true;
+            }
+        }
+        
+        /*
         function showHide(){
         // let sw = 0; 생략해도 됌
         let img = document.getElementById("pic");
@@ -30,7 +62,7 @@
                 btnText.innerText = "숨기기";
                 //sw = 0;
             }
-        }
+        }*/
     </script>
 </body>
 </html>
