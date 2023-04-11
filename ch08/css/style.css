@@ -25,7 +25,7 @@ h1{
     to{
         left: 300px;
         opacity: 1; /* 불투명 */
-    }``
+    }
 }
 @keyframes back_slide{
     from{
