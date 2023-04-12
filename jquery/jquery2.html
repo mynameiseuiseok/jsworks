@@ -37,7 +37,9 @@
 
         //제이 쿼리
         $(document).ready(function(){
-            $(".list li:first-child").css('color', 'blue');
+            // $(".list li:first-child").css('color', 'blue');
+            // $(".list li:nth-of-type(1)").css('color', '#00f');
+            $(".list li:nth-of-type(1)").css({'color':'#00f'});
             //li 순번이 짝수인 경우 - 0, 2, 4
             $(".list li:even").css('background', 'gray');
             //li 순번이 홀수인 경우 - 1, 3, 5
